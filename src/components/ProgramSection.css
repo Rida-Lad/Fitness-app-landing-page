@@ -1,0 +1,62 @@
+/* Custom Swiper Pagination Styles */
+.swiper-pagination {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    /* Adjust spacing between dots */
+    margin-top: 24px;
+    /* Adjust spacing from the carousel */
+}
+
+.swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background-color: #8B4513;
+    /* Inactive dot color */
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #8B4513;
+    /* Active dot color */
+    opacity: 1;
+    transform: scale(1.2);
+    /* Slightly enlarge active dot */
+}
+
+.particle {
+    position: absolute;
+    background: #8B4513;
+    border-radius: 50%;
+    animation: particle-float 3s ease-in-out infinite;
+    opacity: 0.5;
+    /* Increased opacity */
+    pointer-events: none;
+    transition: transform 0.2s ease-in-out;
+}
+
+@keyframes particle-float {
+
+    0%,
+    100% {
+        transform: translateY(0) translateX(0);
+        opacity: 0.5;
+    }
+
+    25% {
+        transform: translateY(-30px) translateX(15px);
+        opacity: 0.7;
+    }
+
+    50% {
+        transform: translateY(-60px) translateX(-20px);
+        opacity: 0.3;
+    }
+
+    75% {
+        transform: translateY(-30px) translateX(10px);
+        opacity: 0.6;
+    }
+}
