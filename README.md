@@ -19,8 +19,8 @@ The Programs Section showcases FitJourney's diverse workout offerings in an enga
 
 <div align="center">
   <img src="./public/screenshots/hero-section.png" width="45%" alt="Hero Section">
-  <img src="./public/screenshots/carousel-view.png" width="45%" alt="NFT Carousel">
-  <img src="./public/screenshots/mobile-view.png" width="90%" alt="Mobile Responsive View" style="margin-top: 20px">
+  <img src="./public/screenshots/carousel.png" width="45%" alt="Programs carousel">
+  <img src="./public/screenshots/contact.png" width="50%" alt="contact form " style="margin-top: 20px">
 </div>
 
 ### ✨ Key Features
