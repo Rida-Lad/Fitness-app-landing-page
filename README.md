@@ -15,28 +15,13 @@ FitJourney is a comprehensive fitness platform designed to help users transform 
 
 The Programs Section showcases FitJourney's diverse workout offerings in an engaging, interactive format.
 
-### 🎯 Interactive Program Carousel
+## 📸 Screenshots
 
-```jsx
-<Swiper
-  spaceBetween={30}
-  slidesPerView={3}
-  loop={true}
-  autoplay={{ delay: 3000 }}
-  pagination={{ clickable: true }}
-  breakpoints={{
-    640: { slidesPerView: 1 },
-    768: { slidesPerView: 2 },
-    1024: { slidesPerView: 3 }
-  }}
->
-  {programs.map(program => (
-    <SwiperSlide key={program.title}>
-      <ProgramCard {...program} />
-    </SwiperSlide>
-  ))}
-</Swiper>
-```
+<div align="center">
+  <img src="./public/screenshots/hero-section.png" width="45%" alt="Hero Section">
+  <img src="./public/screenshots/carousel.png" width="45%" alt="Programs carousel">
+  <img src="./public/screenshots/contact.png" width="50%" alt="contact form " style="margin-top: 20px">
+</div>
 
 ### ✨ Key Features
 
@@ -55,34 +40,6 @@ The Programs Section showcases FitJourney's diverse workout offerings in an enga
 - **Tailwind CSS**: Utility-first responsive styling
 - **Custom Animations**: Particle effects and hover states
 
-## 🏗️ Program Data Structure
-
-```javascript
-const programs = [
-  {
-    icon: <Dumbbell />,
-    title: "Strength Training",
-    description: "Build muscle and increase strength through progressive resistance training routines.",
-    level: "Beginner to Advanced",
-    duration: "8 weeks"
-  },
-  {
-    icon: <Heart />,
-    title: "Cardio Blast",
-    description: "Improve cardiovascular health and endurance with high-energy interval training.",
-    level: "All Levels",
-    duration: "6 weeks"
-  },
-  {
-    icon: <Users />,
-    title: "Group Fitness",
-    description: "Join community-based workouts for motivation and social support.",
-    level: "Beginner Friendly",
-    duration: "Ongoing"
-  },
-  // Additional program objects...
-];
-```
 
 ## 🎨 Design Elements
 
@@ -118,18 +75,13 @@ const programs = [
 
 ### Installation
 
-1. Clone the repository
-```bash
-git clone https://github.com/yourusername/fitjourney.git
-cd fitjourney
-```
 
-2. Install required dependencies
+1. Install required dependencies
 ```bash
 npm install swiper lucide-react
 ```
 
-3. Import necessary components and styles
+2. Import necessary components and styles
 ```javascript
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Autoplay } from 'swiper/modules';
